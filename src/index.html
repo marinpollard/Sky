@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Project</title>
+
+    <link rel="stylesheet" href="../src/styles/styles.css">
+    <link rel="stylesheet" href="../src/styles/fonts.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="description" content="Web Page">
+    <meta name="keywords" content="html, webdev">
+    <meta name="author" content="Marina Moroz">
+    
+
+</head>
+<body>
+    
+    
+    <header class="header">
+
+        <div class="header__top">
+            <p>Winter Gear Guide - Our Top Ski Touring and Splitboard Setups. <a class="top__link" href="#">Read more.</a></p>
+        </div>
+        
+        
+        <div class="header__head"> 
+            <div class="container">
+            <div class="logo">
+                <img src="./img/icons/image 1.png" class="logo__icon" alt="logo">
+                <h3 class="logo__text">Wolf House</h3>
+            </div>
+            <div class="search">
+                <input type="text" class="search__input" type="search" placeholder="Search brands, gear and guides">
+            </div>
+            
+            <div class="personal">
+                <div class="personal__language language">
+                    <p class="language__title">En</p>
+                    <img src="./img/icons/Frame english.png" class="language__icon" alt="language">
+                </div>
+
+                <div class="dropdown" data-dropdown>
+                    <button class="link" data-dropdown-button>
+                        My account
+                        <i></i>
+                    </button>
+                
+                    <div class="dropdown-menu choice-information">
+                        <div>
+                        <div class="account__links">
+                            <a href="#" class="link-1">My delievery</a>
+                            <a href="#" class="link-1">My cards</a>
+                            <a href="#" class="link-1">Purchases</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>                
+                
+                <div class="percashe">
+                    <select class ="personal__cashe"><i></i>
+                        <option class="cashe-title" selected>USD</option>
+                        <option class="cashe-title">EUR</option>
+                        <option class="cashe-title">RUB</option> 
+                    
+                    </select>
+                </div>
+                
+                <div class="personal__busket busket">
+                    <img src="./img/icons/cart.png" class="busket__icon" alt="busket">
+                    <p class="busket__count"><sup>+3</sup></p>
+                </div>
+            </div>
+            </div>
+
+            
+        </div>
+
+        <div class="header__menu container">
+            
+            <nav class="navigation">
+                <ul class="navigation__lists">
+                    <div class="button__blue1">
+                        <img src="./img/icons/Frame 14.png" class="blue1__icon" alt="">
+                        <a class="blue1__text">Categories</a>
+                    </div>
+                    <li class="navigation__list"><a class="navigation__link" href="">Ski boots</a></li>
+                    <li class="navigation__list"><a class="navigation__link" href="">Ski accessories</a></li>
+                    <li class="navigation__list"><a class="navigation__link" href="">Apparel</a></li>
+                    <li class="navigation__list"><a class="navigation__link" href="">Snowboard shop</a></li>
+                    <li class="navigation__list"><a class="navigation__link" href="">Brands</a></li>
+                    <li class="navigation__list"><a class="navigation__link" href="">Sale
+                    </a></li>
+                </ul>
+
+                <div class="smallnav">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            
+        </div>
+
+        <div class="header__banner">
+            <div class="banner">
+                <p class="banner__title">
+                    New ATOMIC collection with nano-techs.
+                </p>
+                <p class="banner__description">
+                    Check our new 2021 collection for freeride.
+                </p>
+                <div class="button__white">
+                    <a class="white__text">Button</a>                    
+                </div>              
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="wrapper container">
+            
+            <h1 class="maintitle">Snowboard</h1>
+
+            <div class="blocks">
+                
+                <div class="blocks__left">
+                        
+                    <div class="multi-selector">
+                        <div class="select-box" onclick="showCheckboxes1()">
+                            <select>
+                                <option>Categories</option>
+                            </select>
+                            <div class="over-select"></div>
+                        </div>
+                        <div id="checkboxes1">
+                            <label for="one">
+                                <input type="checkbox" id="one" />
+                                All-Mauntain Snowboards (51)
+                            </label>
+                            
+                            <input class="view-more" type="view-more" placeholder="View more...">
+                        </div>                            
+                    </div>
+
+                    <div class="multi-selector">
+                        <div class="select-box" onclick="showCheckboxes2()">
+                            <select>
+                                <option>Gender</option>
+                            </select>
+                            <div class="over-select"></div>
+                        </div>
+                        <div id="checkboxes2">
+                            <label for="one">
+                                <input type="checkbox" id="one" />
+                                Men' (6)
+                            </label>
+                            <label for="two">
+                                <input type="checkbox" id="two" />
+                                Women's (32)
+                            </label>
+                            <label for="three">
+                                <input type="checkbox" id="three" />
+                                Unisex (52)
+                            </label>
+                            <input class="view-more" type="view-more" placeholder="View more...">
+                        </div>
+                        
+                    </div>
+
+                    <div class="multi-selector">
+                        <div class="select-box" onclick="showCheckboxes3()">
+                            <select>
+                                <option>Brans</option>
+                            </select>
+                            <div class="over-select"></div>
+                        </div>
+                        <div id="checkboxes3">
+                            <label for="one">
+                                <input type="checkbox" id="one" />
+                                Arbor (19)
+                            </label>
+                            <label for="two">
+                                <input type="checkbox" id="two" />
+                                Bataleon (6)
+                            </label>
+                            <label for="three">
+                                <input type="checkbox" id="three" />
+                                Capita (14)
+                            </label>
+                            <input class="view-more" type="view-more" placeholder="View more...">
+                        </div>
+                    </div>
+
+                    <div class="multi-selector">
+                        <div class="select-box" onclick="showCheckboxes4()">
+                            <select>
+                                <option>Snowboards Lenght (cm)</option>
+                            </select>
+                            <div class="over-select"></div>
+                        </div>
+                        <div id="checkboxes4">
+                            <label for="one">
+                                <input type="checkbox" id="one" />
+                                80 to 149 (39)
+                            </label>
+                            <label for="two">
+                                <input type="checkbox" id="two" />
+                                150 to 159 (79)
+                            </label>
+                            <label for="three">
+                                <input type="checkbox" id="three" />
+                                Capita (14)
+                            </label>
+                            <input class="view-more" type="view-more" placeholder="View more...">
+                        </div>
+                    </div>
+
+                    <div class="multi-selector">
+                        <div class="select-box" onclick="showCheckboxes5()">
+                            <select>
+                                <option>Snowboards Shape</option>
+                            </select>
+                            <div class="over-select"></div>
+                        </div>
+                        <div id="checkboxes5">
+                            <label for="one">
+                                <input type="checkbox" id="one" />
+                                Directional (39)
+                            </label>
+                            <label for="two">
+                                <input type="checkbox" id="two" />
+                                Directional Twin (36)
+                            </label>
+                            <label for="three">
+                                <input type="checkbox" id="three" />
+                                True Twin (26)
+                            </label>
+                            <input class="view-more" type="view-more" placeholder="View more...">
+                        </div>
+                    </div>
+
+                    <div class="multi-selector">
+                        <div class="select-box" onclick="showCheckboxes6()">
+                            <select>
+                                <option>Snowboards Style</option>
+                            </select>
+                            <div class="over-select"></div>
+                        </div>
+                        <div id="checkboxes6">
+                            <label for="one">
+                                <input type="checkbox" id="one" />
+                                All-Mountain (64)
+                            </label>
+                            <label for="two">
+                                <input type="checkbox" id="two" />
+                                Freeride (22)
+                            </label>
+                            <label for="three">
+                                <input type="checkbox" id="three" />
+                                Freestyle (22)
+                            </label>
+                            <input class="view-more" type="view-more" placeholder="View more...">
+                        </div>
+                    </div>
+
+                    <div class="multi-selector">
+                        <div class="select-box" onclick="showCheckboxes7()">
+                            <select>
+                                <option>Price</option>
+                            </select>
+                            <div class="over-select"></div>
+                        </div>
+                        <div id="checkboxes7">
+                            <label for="one">
+                                <input type="checkbox" id="one" />
+                                $50.00 to $99.99 (1)
+                            </label>
+                            <label for="two">
+                                <input type="checkbox" id="two" />
+                                $100.00 to $199.99 (1)
+                            </label>
+                            <label for="three">
+                                <input type="checkbox" id="three" />
+                                $200.00 to $499.99 (52)
+                            </label>
+                            <input class="view-more" type="view-more" placeholder="View more...">
+                        </div>
+                    </div>
+
+                    <div class="multi-selector">
+                        <div class="select-box" onclick="showCheckboxes8()">
+                            <select>
+                                <option>Snowbord Profile</option>
+                            </select>
+                            <div class="over-select"></div>
+                        </div>
+                        <div id="checkboxes8">
+                            <input class="view-more" type="view-more" placeholder="View more...">
+                        </div>
+                    </div>
+
+                    <div class="multi-selector9">
+                        <div class="select-box" onclick="showCheckboxes9()">
+                            <select>
+                                <option>Flex</option>
+                            </select>
+                            <div class="over-select"></div>
+                        </div>
+                        <div id="checkboxes9">
+                            <input class="view-more" type="view-more" placeholder="View more...">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blocks__right">
+                
+                    <div class="navproduct">
+                            <p class="navproduct__text">170 matches found</p>
+                            
+                            <div class="navproduct__view">
+                                <div class="choice__one">
+                                    <snap class="choice-text">View</snap>
+                                    <select class="choice-one">
+                                        <option class="choice-title">3</option>
+                                        <option class="choice-title">6</option>
+                                        <option class="choice-title" selected>9</option>
+                                    </select>
+                                </div> 
+                            </div>
+
+                            <div class="navproduct__sort">
+                                <div class="choice__one">
+                                    <snap class="choice-text">Sort by</snap>
+                                    <select class="choice-one">
+                                        <option class="choice-title" selected>Most popular</option>
+                                        <option class="choice-title">New products</option>
+                                        <option class="choice-title">Price</option>
+                                    </select>
+                                </div>
+                            </div>
+                    </div>
+                
+                    <div class="products">
+                            <div class="columna">
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img class="img" src="../src/img/7_0_a03738bd-4434-4092-a6a1-5a69e1df7c89 2.png" alt="image_relative">
+                                    </div>
+                                
+                                    <div class="product__text">
+                                        <div class="product__title title">
+                                            <b>Niche:</b> Nightshade Snowboard - Women's - 2019/2020
+                                        </div>
+                                        <div class="product__description description">
+                                            <div class="price">
+                                                $ 398.93
+                                            </div>
+                                            <div class="pastprice">
+                                                $ 499.00
+                                            </div>
+                                            <div class="rating">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star (1).svg" alt="image_relative">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img class="img" src="../src/img/4_0_e5b6ef5e-8ca2-4e70-bd0d-5cc0d5eb020e.png" alt="image_relative">
+                                    </div>
+                                
+                                    <div class="product__text">
+                                        <div class="product__title title">
+                                            <b>Niche:</b> Nightshade Snowboard - Women's - 2019/2020
+                                        </div>
+                                        <div class="product__description description">
+                                            <div class="price">
+                                                $ 398.93
+                                            </div>
+                                            <div class="pastprice">
+                                                $ 499.00
+                                            </div>
+                                            <div class="rating">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star (1).svg" alt="image_relative">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img class="img" src="../src/img/5_0_aa341839-f7f8-4412-9de4-7ededc1aeeec 1.png" alt="image_relative">
+                                    </div>
+                                
+                                    <div class="product__text">
+                                        <div class="product__title title">
+                                            <b>Jones:</b> Twin Sister Snowboard - Women's - 2020/2021
+                                        </div>
+                                        <div class="product__description description">
+                                            <div class="price">
+                                                $ 499.95
+                                            </div>
+                                            
+                                            <div class="rating">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star (1).svg" alt="image_relative">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="columna bording">
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img class="img" src="../src/img/5_0_161ac768-38a5-4209-8724-abf5a69016c0.png" alt="image_relative">
+                                    </div>
+                            
+                                    <div class="product__text">
+                                        <div class="product__title title">
+                                            <b>Weston:</b> Backwoods Snowboard - 2020/2021 sdkfjsdkf jksdlkfs kdfk..
+                                        </div>
+                                        <div class="product__description description">
+                                            <div class="price">
+                                                $ 398.93
+                                            </div>
+                                            <div class="rating">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star (1).svg" alt="image_relative">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img class="img" src="../src/img/2_0_512846b5-3c72-4d2d-9843-0d6ce04cf7d2.png" alt="image_relative">
+                                    </div>
+                                
+                                    <div class="product__text">
+                                        <div class="product__title title">
+                                            <b>Weston:</b> Backwoods Snowboard - 2020/2021 sdkfjsdkf jksdlkfs kdfk..
+                                        </div>
+                                        <div class="product__description description">
+                                            <div class="price">
+                                                $ 398.93
+                                            </div>
+                                            <div class="rating">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star (1).svg" alt="image_relative">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img class="img" src="../src/img/6_0_a3cb6a48-feb0-4001-a412-2f9454662df5 1.png" alt="image_relative">
+                                    </div>
+                                
+                                    <div class="product__text">
+                                        <div class="product__title title">
+                                            <b>Burton:</b> Deep Thinker Snowboard - 2020/2021
+                                        </div>
+                                        <div class="product__description description">
+                                            <div class="price">
+                                                $ 599.95
+                                            </div>
+                                            <div class="rating">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star (1).svg" alt="image_relative">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="columna">
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img class="img" src="../src/img/3_0_17c95511-66e8-4039-9a69-6941b864c0cb.png" alt="image_relative">
+                                    </div>
+                            
+                                    <div class="product__text">
+                                        <div class="product__title title">
+                                            <b>Niche:</b> Nightshade Snowboard - Women's - 2019/2020
+                                        </div>
+                                        <div class="product__description description">
+                                            <div class="price">
+                                                $ 398.93
+                                            </div>
+                                            <div class="rating">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star (1).svg" alt="image_relative">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img class="img" src="../src/img/1_0_a0f3f020-6305-420a-aa4a-975967158fe7 1.png" alt="image_relative">
+                                    </div>
+                            
+                                    <div class="product__text">
+                                        <div class="product__title title">
+                                            <b>Niche:</b> Nightshade Snowboard - Women's - 2019/2020
+                                        </div>
+                                        <div class="product__description description">
+                                            <div class="price">
+                                                $ 398.93
+                                            </div>
+                                            <div class="rating">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                                                <img class="product-rating" src="../src/img/icons/Star (1).svg" alt="image_relative">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="advertising">
+                                    <div class="advertising__image">
+                                        <img class="advertising-img" src="../src/img/images 1.png" alt="image_relative">
+                                    </div>
+                                    
+                                    <div class="advertising__advert">
+                                        <div class="advert__title">
+                                            EVO TRIP
+                                        </div>
+                                        <div class="advert__description">
+                                            ADVANTURE TRAVEL PACKAGE
+                                        </div>
+                                        <a class="advert__link" href="">
+                                            Travel with Us
+                                        </a>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="pages">
+                        <p class="pages__title">Pages:</p>
+                            
+                        <div class="pages__current">
+                            <div class="choice__one">
+                                <select class="choice-one">
+                                    <option class="choice-title">1</option>
+                                    <option class="choice-title">2</option>
+                                    <option class="choice-title" selected>3</option>
+                                    <option class="choice-title">4</option>
+                                    <option class="choice-title">5</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <p class="pages__title">of 25</p>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards">
+            
+            <h1 class="maintitle">Best Sellers</h1>
+            
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="line container">
+                            <div class="card">
+                                <div class="card__image">
+                                    <img class="card__img" src="../src/img/04 2.png" alt="image_relative">
+                                </div>
+                            
+                                <div class="card__text">
+                                    <p class="card-text1">
+                                        POC</p>
+                                    <p class="card-text2">
+                                        Obex Spin Helmet</p>
+                                    <p class="card-price">
+                                        $ 279.95
+                                    </p>
+                                </div>
+                            
+                            </div>
+                            
+                            <div class="card">
+                                <div class="card__image">
+                                    <img class="card__img" src="../src/img/01 1.png" alt="image_relative">
+                                </div>
+                            
+                                <div class="card__text">
+                                    <p class="card-text1">
+                                        Rossignol</p>
+                                    <p class="card-text2">
+                                        EVO 70 Ski Boots</p>
+                                    <p class="card-price">
+                                        $ 89.99
+                                    </p>
+                                </div>
+                            
+                            </div>
+                            
+                            <div class="card">
+                                <div class="card__image">
+                                    <img class="card__img" src="../src/img/02 1.png" alt="image_relative">
+                                </div>
+                            
+                                <div class="card__text">
+                                    <p class="card-text1">
+                                        Tecnica</p>
+                                    <p class="card-text2">
+                                        JT 2 Pearl Girl Ski Boots</p>
+                                    <p class="card-price">
+                                        $ 119.95
+                                    </p>
+                                </div>
+                            
+                            </div>
+                            
+                            <div class="card">
+                                <div class="card__image">
+                                    <img class="card__img" src="../src/img/03 1.png" alt="image_relative">
+                                </div>
+                            
+                                <div class="card__text">
+                                    <p class="card-text1">
+                                        Rossignol</p>
+                                    <p>XV Sashimi LG Light</p>
+                                    <p class="card-price">
+                                        $ 599.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            
+            
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="footer__section container">
+            <div class="footer__block block">
+                <p class="block__title">
+                    Need Help?
+                </p>
+                <p class="block__description">
+                    Talk to our Gearheads 24/7 about your needs
+                </p>
+                <div class="button__blue1">
+                    Chat Now
+                </div>
+                <p class="block__number">
+                    Or Call: 1-800-409-4502
+                </p>
+            </div>
+            
+            <div class="footer__block block">
+                <p class="block__title">
+                    Stay in the know
+                </p>
+                <p class="block__description">
+                    Be the first to see sales & new gear!
+                </p>
+                <form action="formHandler.php" name="simple form" autocomplete="on" method="POST">
+                    <div class="block__text">Email Address</div>
+                    <div class="block__button">
+                        <input class="block__form" type="text" />
+                        <div class="button__blue2">
+                            Submit
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <nav class="footer__navigation navigation">
+            <ul class="navigation__lists container">
+                <li class="navigation__list"><a class="navigation__link" href="">Categories</a></li>
+                <li class="navigation__list"><a class="navigation__link" href="">Ski boots</a></li>
+                <li class="navigation__list"><a class="navigation__link" href="">Ski accessories</a></li>
+                <li class="navigation__list"><a class="navigation__link" href="">Apparel</a></li>
+                <li class="navigation__list"><a class="navigation__link" href="">Snowboard shop</a></li>
+                <li class="navigation__list"><a class="navigation__link" href="">Brands</a></li>
+                <li class="navigation__list"><a class="navigation__link" href="">Sale</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer__about container">
+            <div class="footer__column column">
+                <p class="column__title">Gift Certificates</p>
+                <div class="column__text">
+                    <p class="column__list">e-Gift Certificate</p>
+                    <p class="column__list">Classic Gift Card</p>
+                </div>
+            </div>
+            <div class="footer__column column">
+                <p class="column__title">Resources</p>
+                <div class="column__text">
+                    <p class="column__list">Returns</p>
+                    <p class="column__list">Order Status</p>
+                    <p class="column__list">Sale Item Policy</p>
+                    <p class="column__list">Sales Tax Policy</p>
+                    <p class="column__list">Terms of Use</p>
+                    <p class="column__list">Privacy Policy</p>
+                    <p class="column__list">Do Not Sell My Personal Data</p>
+                    <p class="column__list">International Shipping Policy</p>
+                    <p class="column__list">Learning Resources</p>
+                    <p class="column__list">Gift Card Terms & Conditions</p>
+                    <p class="column__list">Special Group Offers</p>
+                </div>
+            </div>
+            <div class="footer__column column">
+                <p class="column__title">About M-SPORT</p>
+                <div class="column__text">
+                    <p class="column__list">About M-SPORT</p>
+                    <p class="column__list">Press Releases</p>
+                    <p class="column__list">Group Sales</p>
+                    <p class="column__list">Land Your Dream Job</p>
+                    <p class="column__list">Affiliate Program</p>
+                    <p class="column__list">Accessibility Statement</p>
+                </div>
+            </div>
+            <div class="footer__column links">
+                <div class="column__social">
+                    <img src="./img/icons/Facebook - Negative.png" class="footer__icon" alt="lin">
+                    <img src="./img/icons/Twitter - Negative.png" class="footer__icon" alt="lin">
+                    <img src="./img/icons/YouTube - Negative - Alternate.png" class="footer__icon" alt="lin">
+                    <img src="./img/icons/Instagram - Negative.png" class="footer__icon" alt="lin">
+                </div>
+                <p class="column__title">Download the М-SPORT App</p>
+                <div class="footer__app">
+                    <img src="./img/icons/googleplay.png" class="footer__icon" alt="lin">
+                    <img src="./img/icons/appstore.png" class="footer__icon" alt="lin">
+                </div>
+        </div>
+
+        </div>
+        <div class="footer__inline container">
+            <img src="./img/icons/logo.png" class="footer__logo" alt="lin">
+            <p class="footer__logo-text">© M-SPORT.com – All Rights Reserved</p> 
+        </div>
+
+
+
+    </footer> 
+    
+    <script src="/SKY/src/js/selector.js"></script>
+    <script src="/SKY/src/js/header.js"></script>
+    <script src="/SKY/src/js/arrow.js"></script>
+    <script src="/SKY/src/js/navigation.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>     
+    <script type="module" src="../src/js/swiper.js"></script>
+    
+
+</body>
+</html>

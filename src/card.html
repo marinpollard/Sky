@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Project</title>
+
+    <link rel="stylesheet" href="../src/styles/styles.css">
+    <link rel="stylesheet" href="../src/styles/fonts.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta name="description" content="Web Page">
+    <meta name="keywords" content="html, webdev">
+    <meta name="author" content="Marina Moroz">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <div class="header__top">
+            <p>Winter Gear Guide - Our Top Ski Touring and Splitboard Setups. <a class="top__link" href="#">Read
+                    more.</a></p>
+        </div>
+
+        <div class="header__head">
+            <div class="container">
+                <div class="logo">
+                    <img src="./img/icons/image 1.png" class="logo__icon" alt="logo">
+                    <h3 class="logo__text">Wolf House</h3>
+                </div>
+                <div class="search">
+                    <input type="text" class="search__input" type="search" placeholder="Search brands, gear and guides">
+                </div>
+        
+                <div class="personal">
+                    <div class="personal__language language">
+                        <p class="language__title">En</p>
+                        <img src="./img/icons/Frame english.png" class="language__icon" alt="language">
+                    </div>
+        
+                    <div class="dropdown" data-dropdown>
+                        <button class="link" data-dropdown-button>
+                            My account
+                            <i></i>
+                        </button>
+        
+                        <div class="dropdown-menu choice-information">
+                            <div>
+                                <div class="account__links">
+                                    <a href="#" class="link-1">My delievery</a>
+                                    <a href="#" class="link-1">My cards</a>
+                                    <a href="#" class="link-1">Purchases</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="percashe">
+                        <select class="personal__cashe"><i></i>
+                            <option class="cashe-title" selected>USD</option>
+                            <option class="cashe-title">EUR</option>
+                            <option class="cashe-title">RUB</option>
+        
+                        </select>
+                    </div>
+        
+                    <div class="personal__busket busket">
+                        <img src="./img/icons/cart.png" class="busket__icon" alt="busket">
+                        <p class="busket__count"><sup>+3</sup></p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="header__menu container">
+
+            <nav class="navigation">
+                <ul class="navigation__lists">
+                    <div class="button__blue1">
+                        <img src="./img/icons/Frame 14.png" class="blue1__icon" alt="">
+                        <a class="blue1__text">Categories</a>
+                    </div>
+                    <li class="navigation__list"><a class="navigation__link" href="">Ski boots</a></li>
+                    <li class="navigation__list"><a class="navigation__link" href="">Ski accessories</a></li>
+                    <li class="navigation__list"><a class="navigation__link" href="">Apparel</a></li>
+                    <li class="navigation__list"><a class="navigation__link" href="">Snowboard shop</a></li>
+                    <li class="navigation__list"><a class="navigation__link" href="">Brands</a></li>
+                    <li class="navigation__list"><a class="navigation__link" href="">Sale
+                        </a></li>
+                </ul>
+
+                <div class="smallnav">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="cards__nav container">
+            <p class="nav-deactive">
+                Snowboarding / <a class="nav-deactive" href="../src/index.html">Snowboards </a> / 
+            </p>
+            <p class="nav-active">
+                 All-Mountain Snowboards
+            </p>
+        </div>
+
+        <div class="cards__block container">
+
+            <div class="leftcards">
+                <img src="./img/6_0_a3cb6a48-feb0-4001-a412-2f9454662df5 2.svg" class="leftcards__main" alt="">
+                <div class="leftcards__other">
+                    <img src="./img/burton_deep_thinker_camber_160_2020_2021_2.jpg" class="leftcards__little" alt="">
+                    <img src="./img/burton_deep_thinker_camber_160_2020_2021_3.jpg" class="leftcards__little" alt="">
+                    <img src="./img/burton_deep_thinker_camber_160_2020_2021_5.jpg" class="leftcards__little" alt="">
+                    <img src="./img/burton_deep_thinker_camber_160_2020_2021_6.jpg" class="leftcards__little" alt="">
+                </div>
+            </div>
+
+            <div class="rightcards">
+
+                <a class="rightcards__brand" href="">Burton</a>
+                <p class="rightcards__title">Burton Deep Thinker Snowboard - 2020/2021</p>
+                <div class="rightcards__rating">
+                    <img class="cards-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                    <img class="cards-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                    <img class="cards-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                    <img class="cards-rating" src="../src/img/icons/Star.svg" alt="image_relative">
+                    <img class="cards-rating" src="../src/img/icons/Star (1).svg" alt="image_relative">
+                </div>
+                <p class="rightcards__price">$ 599.95</p>
+                <div class="rightcards__size">
+                    <p class="size__text">Size</p>
+                    <div class="size__size">
+                        <div class="button__size">
+                            <a class="button-size-text">154 cm</a>  
+                        </div>
+                        <div class="button__size">
+                            <a class="button-size-text">157 cm</a>
+                        </div>
+                        <div class="button__size">
+                            <a class="button-size-text">160 cm</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightcards__quantity">
+                    <p class="quantity__text">Quantity</p>
+                    <div class="quantity__number" data-step="1" data-min="1" data-max="100">
+                        <input class="number-text" type="text" name="count" value="1">
+                        <a href="" class="number-minus">-</ф>
+                        <a href="" class="number-plus">+</a>
+                    </div>
+                </div>
+
+                <div class="rightcards__radio">
+                    <div class="radio">
+                        <label class="custom-radio">
+                            <input class="custom-radio-input" type="radio" name="color" value="1">
+                            <span class="custom-radio-span">Ship to address</span>
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label class="custom-radio">
+                            <input class="custom-radio-input" type="radio" name="color" value="2">
+                            <span class="custom-radio-span">Pick up at store</span>
+                        </label>
+                    </div>
+
+                </div>
+
+                <p class="rightcards__text">Buy Now, Pay Later <a class="text__link" href="">Learn More</a></p>
+
+                <div class="rightcards__buttons">
+                    <div class="button__rightcard-blue">
+                        <p class="rightcard-blue-text">ADD TO CART</p> 
+                    </div>
+                    <div class="button__rightcard-white">
+                        <p class="rightcard-white-text">Add to wish list</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards-descriptioned container">
+            <div class="descriptioned-left">
+
+                <div class="othercontent">
+                    <div class="othercontent-line">
+                        <div class="label">
+                            <p class="label-title">
+                                Feature
+                            </p>
+                            <snap class="label-symb">></snap>
+                        </div>
+                        <div class="content">
+                            <p class="content__desc">Classic directional shape is designed to be ridden with a slightly longer nose than tail, concentrating pop in the tail while still providing ample float, flow and control.</p>
+                            <a class="cont-link" href="">View more...</a>
+                        </div>
+                    </div>
+                    <div class="othercontent-line">
+                        <div class="label">
+                            <p class="label-title">
+                                Feature
+                            </p>
+                            <snap class="label-symb">></snap>
+                        </div>
+                        <div class="content">
+                            <p class="content__desc"></p>
+                            <a class="cont-link" href="">View more...</a>
+                        </div>
+                    </div>
+                    <div class="othercontent-line">
+                        <div class="label">
+                            <p class="label-title">
+                                Feature
+                            </p>
+                            <snap class="label-symb">></snap>
+                        </div>
+                        <div class="content">
+                            <p class="content__desc"></p>
+                            <a class="cont-link" href="">View more...</a>
+                        </div>
+                    </div>
+                    <div class="othercontent-line">
+                        <div class="label">
+                            <p class="label-title">
+                                Feature
+                            </p>
+                            <snap class="label-symb">></snap>
+                        </div>
+                        <div class="content">
+                            <p class="content__desc"></p>
+                            <a class="cont-link" href="">View more...</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="descriptioned-right">
+                <div class="othercontent">
+                    <div class="othercontent-line">
+                        <div class="label">
+                            <div class="label-title">
+                                Technical specs
+                            </div>
+                            <snap class="label-symb">></snap>
+                        </div>
+
+                        <div class="content">
+                            <div class="content-line">
+                                <p class="content__title">Best Use:</p>
+                                <p class="content__desc dop">Snowboarding</p>
+                            </div>
+                            <div class="content-line">
+                                <p class="content__title">Snowboard Style:</p>
+                                <p class="content__desc dop2"> All-mountain</p>
+                            
+                            </div>
+                            <div class="content-line">
+                                <p class="content__title">Snowboard Shape:</p>
+                                <p class="content__desc">Directional</p>
+                            
+                            </div>
+                            <div class="content-line">
+                                <p class="content__title">Snowboard Profile:</p>
+                                <p class="content__desc">Camber</p>
+                            </div>
+                            
+                            <div><a class="cont-link" href="">View more...</a></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="cards">
+        
+            <h1 class="maintitle">Recommended Items</h1>
+        
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="line container">
+                            <div class="card">
+                                <div class="card__image">
+                                    <img class="card__img" src="../src/img/04 2.svg" alt="image_relative">
+                                </div>
+        
+                                <div class="card__text">
+                                    <p class="card-text1">
+                                        POC</p>
+                                    <p class="card-text2">
+                                        Obex Spin Helmet</p>
+                                    <p class="card-price">
+                                        $ 279.95
+                                    </p>
+                                </div>
+        
+                            </div>
+        
+                            <div class="card">
+                                <div class="card__image">
+                                    <img class="card__img" src="../src/img/ш1 1.svg" alt="image_relative">
+                                </div>
+        
+                                <div class="card__text">
+                                    <p class="card-text1">
+                                        Smith</p>
+                                    <p class="card-text2">
+                                        Vantage MIPS Helmet</p>
+                                    <p class="card-price">
+                                        $ 260.00
+                                    </p>
+                                </div>
+        
+                            </div>
+        
+                            <div class="card">
+                                <div class="card__image">
+                                    <img class="card__img" src="../src/img/ш2 1.svg" alt="image_relative">
+                                </div>
+        
+                                <div class="card__text">
+                                    <p class="card-text1">
+                                        Smith</p>
+                                    <p class="card-text2">
+                                        Level MIPS Helmet</p>
+                                    <p class="card-price">
+                                        $ 180.00
+                                    </p>
+                                </div>
+        
+                            </div>
+        
+                            <div class="card">
+                                <div class="card__image">
+                                    <img class="card__img" src="../src/img/ш3 1.svg" alt="image_relative">
+                                </div>
+        
+                                <div class="card__text">
+                                    <p class="card-text1">
+                                        Smith</p>
+                                    <p class="card-text2">
+                                        Cirque X Helmet
+                                    </p>
+                                    <p class="card-price">
+                                        $ 127.77
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        
+        
+        </div>
+        
+    </main>
+
+    <footer>
+    
+        <div class="footer__section">
+            <div class="footer__block block container onecard">
+                <p class="block__title">
+                    Need Help?
+                </p>
+                <p class="block__description">
+                    Talk to our Gearheads 24/7 about your needs
+                </p>
+                <div class="button__blue1">
+                    Chat Now
+                </div>
+                <p class="block__number">
+                    Or Call: 1-800-409-4502
+                </p>
+            </div>
+    
+            <div class="footer__block block container onecard">
+                <p class="block__title">
+                    Stay in the know
+                </p>
+                <p class="block__description">
+                    Be the first to see sales & new gear!
+                </p>
+                <form action="formHandler.php" name="simple form" autocomplete="on" method="POST">
+                    <div class="block__text">Email Address</div>
+                    <div class="block__button">
+                        <input class="block__form" type="text" />
+                        <div class="button__blue2">
+                            Submit
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        <nav class="footer__navigation navigation onecard">
+            <ul class="navigation__lists container">
+                <li class="navigation__list"><a class="navigation__link-onetext" href="">Categories</a></li>
+                <li class="navigation__list"><a class="navigation__link-onetext" href="">Ski boots</a></li>
+                <li class="navigation__list"><a class="navigation__link-onetext" href="">Ski accessories</a></li>
+                <li class="navigation__list"><a class="navigation__link-onetext" href="">Apparel</a></li>
+                <li class="navigation__list"><a class="navigation__link-onetext" href="">Snowboard shop</a></li>
+                <li class="navigation__list"><a class="navigation__link-onetext" href="">Brands</a></li>
+                <li class="navigation__list"><a class="navigation__link-onetext" href="">Sale</a></li>
+            </ul>
+
+            <div class="smallnav">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    
+        <div class="footer__about container">
+            <div class="footer__column column">
+                <p class="column__title">Gift Certificates</p>
+                <div class="column__text">
+                    <p class="column__list">e-Gift Certificate</p>
+                    <p class="column__list">Classic Gift Card</p>
+                </div>
+            </div>
+            <div class="footer__column column">
+                <p class="column__title">Resources</p>
+                <div class="column__text">
+                    <p class="column__list">Returns</p>
+                    <p class="column__list">Order Status</p>
+                    <p class="column__list">Sale Item Policy</p>
+                    <p class="column__list">Sales Tax Policy</p>
+                    <p class="column__list">Terms of Use</p>
+                    <p class="column__list">Privacy Policy</p>
+                    <p class="column__list">Do Not Sell My Personal Data</p>
+                    <p class="column__list">International Shipping Policy</p>
+                    <p class="column__list">Learning Resources</p>
+                    <p class="column__list">Gift Card Terms & Conditions</p>
+                    <p class="column__list">Special Group Offers</p>
+                </div>
+            </div>
+            <div class="footer__column column">
+                <p class="column__title">About M-SPORT</p>
+                <div class="column__text">
+                    <p class="column__list">About M-SPORT</p>
+                    <p class="column__list">Press Releases</p>
+                    <p class="column__list">Group Sales</p>
+                    <p class="column__list">Land Your Dream Job</p>
+                    <p class="column__list">Affiliate Program</p>
+                    <p class="column__list">Accessibility Statement</p>
+                </div>
+            </div>
+            <div class="footer__column links">
+                <div class="column__social">
+                    <img src="./img/icons/Facebook - Negative.png" class="footer__icon" alt="lin">
+                    <img src="./img/icons/Twitter - Negative.png" class="footer__icon" alt="lin">
+                    <img src="./img/icons/YouTube - Negative - Alternate.png" class="footer__icon" alt="lin">
+                    <img src="./img/icons/Instagram - Negative.png" class="footer__icon" alt="lin">
+                </div>
+                <p class="column__title">Download the М-SPORT App</p>
+                <div class="footer__app">
+                    <img src="./img/icons/googleplay.png" class="footer__icon" alt="lin">
+                    <img src="./img/icons/appstore.png" class="footer__icon" alt="lin">
+                </div>
+
+                <div class="footer__logo">
+                    <img src="./img/icons/image 1.png" class="logo__icon" alt="logo">
+                    <h3 class="logo__text">Wolf House</h3>
+                </div>
+
+                <p class="footer__logo-text">© Wolf House.com – All Rights Reserved</p>
+            </div>
+    
+        </div> 
+    
+    </footer>
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../../SKY/src/js/active.js"></script>
+    <script src="../../SKY/src/js/amount.js"></script>
+    <script src="/SKY/src/js/header.js"></script>
+    <script src="../../SKY/src/js/js.js"></script>
+    <script src="../src/js/navigation.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script type="module" src="../src/js/swiper.js"></script>
+
+
+</body>
+    
+</html>
